@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calculator</h1>
+    <input type="text" name="n1" id="n1" placeholder="Enter first number">
+    <input type="text" name="n2" id="n2" placeholder="Enter second number">
+    <button onclick="findSum()">Calculate</button>
+    <script>
+    function findSum(){
+        number1 = document.getElementById("n1").value
+        number2 = document.getElementById("n2").value
+        total = parseInt(number1) + parseInt(number2)
+        alert(`Total is ${total}`)
+        }
+    </script>
+  
+</body>
+</html>

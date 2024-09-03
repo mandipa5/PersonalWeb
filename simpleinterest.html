@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Interest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Simple Interest Calculator</h1>
+    <input type="text" name="p" id="p" placeholder="Enter Principal">
+    <input type="text" name="t" id="t" placeholder="Enter Time">
+    <input type="text" name="r" id="r" placeholder="Enter Rate">
+    <button onclick="findSI()">Calculate</button>
+    <script>
+    function findSI(){
+        principal = document.getElementById("p").value
+        time = document.getElementById("t").value
+        rate = document.getElementById("r").value
+        simple_interest = (parseFloat(principal)*parseFloat(time)*parseFloat(rate))/100
+        alert(`Simple interest is ${simple_interest}`)
+        }
+    </script>
+  
+  
+</body>
+</html>
